@@ -44,14 +44,14 @@
       </swiper-slide>
 
       <swiper-slide style="height: 100%;">
-        <div style="width: 70%;height: 80%;margin: auto;margin-top:5%" class="flex flex-v">
-          <div class="flex-1 flex" style="height: 70%">
+        <div style="width: 70%;height: 80%;margin: auto;margin-top:5%;border:solid 1px red" class="flex flex-v">
+          <div class="flex-1 flex" style="border:solid 1px red">
             <img-components class="flex-1" :bigTitle="bigTitle" :smallTitle="smallTitle" :src="'./static/images/3.jpg'" @changeRouter="$router.push({name:'BrandIntroduction'})"></img-components>
             <div style="width: 80px"></div>
             <img-components class="flex-1" :bigTitle="bigTitle" :smallTitle="smallTitle" :src="'./static/images/4.jpg'" @changeRouter="$router.push({name:'BrandIntroduction'})"></img-components>
           </div>
           <div style="height: 50px"></div>
-          <img class="flex-1" :src="'./static/images/5.jpg'"/>
+          <img class="flex-1" height="50%" :src="'./static/images/5.jpg'"/>
         </div>
       </swiper-slide>
       <swiper-slide style="height: 100%;background-color: #ececec">
