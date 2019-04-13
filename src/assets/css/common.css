@@ -1,0 +1,33 @@
+
+
+/** 小屏 */
+@media (max-width:1440px) {
+
+    .if-dense {display: inherit;}
+
+    .home-title { font-size: 36px;}
+    .home-title-image { width:520px;margin-top: 6px; }
+    .primary-nav .el-menu-item,
+    .primary-nav.el-menu--horizontal>.el-submenu .el-submenu__title { height:38px; line-height:35px; font-size: 17px;}
+
+    .dashboard-dense .dashboard-icon          {height: 48px;}
+    .dashboard-dense .dashboard-item-title    {font-size: 12px;}
+    .dashboard-dense .dashboard-item-number   {font-size: 30px; height: 30px; line-height: 30px;}
+    .dashboard-dense .dashboard-item-decimal  {font-size: 12px; height: 12px; line-height: 11px;}
+    .dashboard-dense .dashboard-item-unit     {font-size: 10px; height: 10px; line-height: 10px;}
+
+
+    .app-title-image { width:400px;margin-top: 6px; }
+}
+
+/* 滚动条样式 */
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+.showScrollbar::-webkit-scrollbar
+{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0,0,0,0);
+    display:block;
+}
