@@ -45,15 +45,22 @@
 
       <swiper-slide style="height: 100%;">
         <div style="width: 70%;height: 80%;margin: auto;margin-top:5%;" class="flex flex-v">
-          <div class="flex-1 flex"  style="height:40%;">
+          <div class="flex-1 flex"  style="height:40%;overflow: hidden">
             <img-components class="flex-1" :bigTitle="bigTitle" :smallTitle="smallTitle" :src="'./static/images/3.jpg'" @changeRouter="$router.push({name:'BrandIntroduction'})"></img-components>
             <div style="width: 80px"></div>
             <img-components class="flex-1" :bigTitle="bigTitle" :smallTitle="smallTitle" :src="'./static/images/4.jpg'" @changeRouter="$router.push({name:'BrandIntroduction'})"></img-components>
           </div>
           <div style="height: 50px"></div>
-          <div class="flex-1">
+          <div class="flex-1" style="overflow: hidden;position: relative;color:#666666;">
             <img height="100%" width="100%" :src="'./static/images/5.jpg'"/>
-          </div>
+            <div class="newsPicStyle flex flex-pack-center">
+              <div class="flex flex-v flex-pack-center flex-align-center news-1">News</div>
+              <div class="flex flex-v flex-pack-center flex-align-center news-2">
+                <div v-for="item in 6" style="height: 30px" >Brand introduction Brand introduction </div>
+              </div>
+            </div>
+            <div style="position:absolute;bottom:8px;right:5px;font-size: 15px;">more</div>
+        </div>
           <!--<img  class="flex-1" :src="'./static/images/5.jpg'"/>-->
         </div>
       </swiper-slide>
@@ -62,7 +69,7 @@
         <div class="flex flex-v" style="height: 100%;width: 70%;margin: auto;">
           <div style="height: 45%;text-align: center;">
             <div class="fontStyle">WEDO Shop</div><br/>
-            <div class="fontStyle2">Brand Introduction Brand Introduction Brand Introduction</div>
+            <div class="fontStyle2"></div>
           </div>
           <div class="flex-1">
             <el-row :gutter="10" >
@@ -214,6 +221,22 @@
   .el-carousel__item:nth-child(2n+1) {
     background-color: #d3dce6;
   }
-
-
+  .newsPicStyle{
+    width: 60%;
+    height: 80%;
+    /*border: 1px solid red;*/
+    position:absolute;
+    right: 18px;
+    top:20px;
+  }
+  .news-1{
+    width: 200px;
+    border-right: 1px solid #7c7c7c;
+    font-size: 25px;
+    top:10px;
+  }
+  .news-2{
+    font-size: 15px;
+    padding: 9px;
+  }
 </style>
