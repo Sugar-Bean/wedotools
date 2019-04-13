@@ -96,9 +96,9 @@
       <!--结束页-->
       <swiper-slide style="height: 100%">
         <div class="flex flex-v" style="height: 100%">
-          <div style="height: 70%;border:1px solid red;text-align: center;color:#666666">
-            <div><img :src="''"></div>
-            <div style="font-size: 20px">Strive To Serve You</div>
+          <div class="flex flex-v" style="height: 70%;text-align: center;color:#666666">
+            <div class="flex-1" style="height:80%;"><img height="100%" :src="'./static/images/工具.png'"></div>
+            <div class="flex-1" style="font-size: 20px">Strive To Serve You</div>
             <div style="font-size: 40px">400 - 0022 - 737</div>
           </div>
           <div style="background-color:#ececec;height: 30%;text-align: center">
